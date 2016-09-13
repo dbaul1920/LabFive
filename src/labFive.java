@@ -18,18 +18,31 @@ public class labFive {
 			rollMe = false;
 			System.out.println("Ok bye!");
 		}
+boolean userContinue=true;
+while(userContinue){
 		// Ask user to enter number of sides
-		System.out.println("Please enter an integer to begin.");
+		System.out.println("How many sides does your dice have?");
 		
 		// read user input
 		Scanner input = new Scanner(System.in);
 		int x = input.nextInt();
 		//Roll dice
 		Random randomNum = new Random();
-		System.out.println(randomNum.nextInt(12));
+		//Print out a random number between 1 and 12
+		System.out.println("You rolled a " + randomNum.nextInt(12));
 		
+		// add continue loop
 		
-
+		System.out.println("Roll agian?");
+		Scanner input2 = new Scanner(System.in);
+		String inputContinue1 = input2.nextLine();
+		if(inputContinue1.equalsIgnoreCase("y")){
+			userContinue = true;
+		} else {
+			userContinue = false;
+			System.out.println("Ok bye!");
+		}
+	}//close while loop
 	}
 
 	
