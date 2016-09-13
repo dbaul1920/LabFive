@@ -7,7 +7,7 @@ public class labFive {
 		// TODO Auto-generated method stub
 		//Greetings and user input
 		System.out.println("Welcome to the Grand Circus Casino!");
-		System.out.println("Roll the dice?");
+		System.out.println("Try your luck with the dice? (Enter Y or N)");
 		Scanner input1 = new Scanner(System.in);
 		String inputContinue = input1.nextLine();
 		boolean rollMe;
@@ -21,7 +21,7 @@ public class labFive {
 boolean userContinue=true;
 while(userContinue){
 		// Ask user to enter number of sides
-		System.out.println("How many sides does your dice have?");
+		System.out.println("How many sides does your dice have? (Enter a whole number)");
 		
 		// read user input
 		Scanner input = new Scanner(System.in);
@@ -33,7 +33,7 @@ while(userContinue){
 		
 		// add continue loop
 		
-		System.out.println("Roll agian?");
+		System.out.println("Roll agian? (Enter Y or N)");
 		Scanner input2 = new Scanner(System.in);
 		String inputContinue1 = input2.nextLine();
 		if(inputContinue1.equalsIgnoreCase("y")){
