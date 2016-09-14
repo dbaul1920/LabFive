@@ -29,7 +29,7 @@ while(userContinue){
 		//Roll dice
 		Random randomNum = new Random();
 		//Print out a random number between 1 and 12
-		System.out.println("You rolled a " + randomNum.nextInt(12));
+		System.out.println("You rolled a " + (randomNum.nextInt(12)+1));
 		
 		// add continue loop
 		
